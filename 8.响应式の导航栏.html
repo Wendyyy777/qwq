@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width:100%;
+        background-color: rgb(236, 140, 37);
+        position: sticky;
+    }
+    h1{
+        color: white;
+        position: absolute;
+        font-size: 5vh;
+        line-height: 10vh;
+        padding: 0 0 0 10%;
+        white-space: nowrap;
+    }
+    ul{
+        position: absolute;
+        right:5px;
+        top:10px;
+        display:flex;
+        flex-wrap:wrap;
+        list-style:none;
+        float:right;
+    }
+    li{
+        margin: 20px;
+        float: right;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration: underline;
+    }  
+    @media(max-width:600px){
+        ul{
+            display: none;
+        }
+    }
+    @media (max-width: 600px) {
+        h1 {
+            left: 50%;
+            padding: 0%;
+            transform: translateX(-50%);
+        }
+    }
+    @media (max-width: 600px) {
+        .box3 {
+        position: relative;
+        width: 90%;
+        padding: 0 0 0 10%;
+        }
+    }
+    h2{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .box1{
+        background-color: rgb(76, 66, 38);
+        height:100vh;
+        color: white;
+        white-space: nowrap;
+    }
+    .box2{
+        top:50%;
+        left: 50%;
+        font-size: 1.7vw;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+    .box3{
+        width: 50%;
+        margin: 2% 0 3% 0;
+        padding: 0 10%;
+    }
+    .box4{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-80%);
+        color:white;
+        border-radius: 0.5vw;
+        padding: 0.5vw;
+        border:0.2vw solid white;
+        font-size: 1.5vw;
+    }
+    .footer{
+        background-color: black;
+        height: 6vw;
+        }
+    .footer p{
+        font-size: 1.5vw;
+        position: absolute;
+        color: white;
+        left:50%;
+        opacity: 0.5;
+        height: 5vw;
+        white-space: nowrap;
+        transform:translate(-50%,40%);
+    }
+
+
+</style>
+<body>
+
+    <header>
+        <h1>木犀前端</h1>
+        <nav>
+            <ul class="ul">
+                <li><a href="#">学习规划</a></li>
+                <li><a href="#">组员列表</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">最新消息</a></li>
+            </ul>
+        </nav>
+        <button class="menu">&#9776;</button>
+    </header>
+        <div class="box1">
+            <div class="box2">
+                <h2>欢迎来到木犀2023秋招机试！</h2>
+                <div class="box3">
+                <p>我将作为困难题的一员前来防守</p>
+                <p>有看第三次直播或翻过我给的文档这题应该对你来说非常EZ</p>
+                <p>目标是实现响应式导航栏，下面两块就当作加分题</p>
+                </div>
+                <div class="box4"><a herf="">了解更多</a></div>
+            </div>
+        </div>
+    <footer class="footer">
+        <p>Copyright © 2023 木犀前端 All Right Reserved.</p>
+    </footer>
+
+</body>
+</html>
