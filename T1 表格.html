@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{background:	#F8F8F8 !important;
+            font-weight: 700;}
+        table{border-collapse:collapse;}
+        /* collapse:如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性 */
+        tr{
+            text-align: left;
+        }
+        table,th,td{
+            border: 1px solid #D8D8D8 ;}
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="15">
+        <caption><b>运单详情</b></caption>
+        <thead>
+            <tr class="a">
+                <th>区域</th>
+                <th>寄达地</th>
+                <th>首重（元/1000g）</th>
+                <th>续重（元/1000g）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="a">一区</td>
+                <td>浙江、上海、江苏</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>江西、安徽</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="a">二区</td>
+                <td>吉林、黑龙江、云南</td>
+                <td>10</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td class="a">三区</td>
+                <td>新疆、西藏</td>
+                <td>15</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
