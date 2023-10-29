@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .genshin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: genshin  3s infinite;
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            animation: text  3s  infinite;
+        }
+        @keyframes genshin {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        @keyframes text {
+            0% {
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+<body>
+    <div class="genshin"><img src="./333.png"></div>
+    <footer><div class="text"><img src="./444.png" ></div></footer>
+</body>
+</html>

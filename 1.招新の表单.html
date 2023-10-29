@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        form{
+            background-color: white;
+            position: absolute;
+            height: 80%;
+            width: 50%;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            box-shadow:5px 5px 10px #888;
+            overflow-y: scroll;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            margin-left: 20px;
+        }
+        .text{
+            width: 90%;
+            height:20px;
+            box-shadow:1px 1px 3px #888;
+            border:1px solid #e1e0e0;
+        }
+        footer{
+            text-align: center;
+        }
+        textarea{
+            width: 90%;
+            height: 200px;
+            resize:none;
+            box-shadow:1px 1px 3px #888;
+            border:1px solid #e1e0e0;
+        }
+        .submit{
+            position: fixed;
+            left:50%;
+            transform: translateX(-50%);
+            color:white;
+            background-color: blue;
+            border-radius: 2px;
+            border-color: transparent;
+            padding: 2px 50px ;
+        }
+    </style>
+<body>
+    <form action="">
+        <h1>招新の表单</h1>
+        <p>姓名：<br>
+        <input type="text" class="text"></p>
+        <p>爱好：
+        <input type="checkbox" disabled>睡觉
+        <input type="checkbox">学前端
+        <input type="checkbox">吃吃吃</p>
+        <p>性别：
+        <input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+        <input type="radio" name="sex">武装直升机</p>
+        <p>评论：<br>
+        <textarea name="" id="" cols="50" rows="10"></textarea></p>
+        <footer><input type="submit" class="submit"></footer>
+    </form>
+</body>
+</html>

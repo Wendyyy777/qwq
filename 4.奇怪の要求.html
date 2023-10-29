@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        color: white;
+        background-image: url('./111.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px;
+        width: 400px;
+    }
+    div::before{
+        content: "我";
+    }
+    div::after{
+        content: "死猪";
+    }
+</style>
+<body>
+    <div>讨厌</div>
+</body>
+</html>

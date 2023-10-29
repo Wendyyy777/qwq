@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木犀前端机试</title>
+</head>
+<style>
+    .box {
+        border: 3px dashed blue;
+        width:100px;
+        height:100px;
+        position:relative;
+        display: inline-block;
+    }
+    .child{ 
+        font-size: 30px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-top: 80px solid yellow;
+        border-right: 50px solid transparent;
+        border-bottom : 50px solid transparent ;
+        border-left : 50px solid transparent;
+        display: inline-block;
+        transform: translate(30%,30%);
+    }
+    .circle{
+        width:100px;
+        height: 50px;
+        border-radius: 50px 50px 0 0;
+        line-height: 50px;
+        background-color: green;
+        display: inline-block;
+        transform: translate(50%,-30%);
+    }
+</style>
+<body>
+    <div class="box"><div class="child"><b>+</b></div></div>
+    <div class="triangle"></div>
+    <div class="circle"></div>
+</body>
+</html>
